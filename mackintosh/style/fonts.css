@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Mackintosh';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mackintosh'), url(hill_house.ttf) format('truetype');
+}
+
+h2 {
+  width: 308px;
+  margin: auto;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-family: Mackintosh;
+  font-variant: small-caps;
+  font-style: bold;
+  font-size: 15px;
+  
+  background-image: url(../files/h2.gif);
+}

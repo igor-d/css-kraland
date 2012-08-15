@@ -1,0 +1,398 @@
+/**
+Css based on a Charles Rennie Mackintosh font designed
+by the brilliant fellows at http://hicksdesign.co.uk/.
+
+Mackintosh's work sometimes has a pixel-art feeling which,
+I believe, could do nicely around here.
+**/
+
+@import url('fonts.css');
+
+/*
+Some parts of the original design are not diplayed. This
+style is meant to be compact and is therefore striving for
+the removing of useless bits.
+*/
+
+#header {
+  display: none;
+}
+
+#left-img {
+	display: none;
+}
+
+#right-img {
+	display: none;
+}
+
+.right-bigbox {
+	display: none;
+}
+
+.bx-img {
+	display: none;
+}
+
+/*
+We now define the general appearance: first we have a
+screen-wide horizontal menu then both left and right
+columns are gathered in a left column while the main part
+fills the rest of the screen.
+*/
+
+body {
+  margin: 0px;
+  width: 100%;
+  font-size: 11px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div {
+  text-align: justify;
+}
+
+#framemenu {
+  width: 100%;
+  height: 30px;
+  position:absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+#main {
+  width: 100%;
+  position: absolute;
+  top: 30px;
+}
+
+#left {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+	left: 0px;
+  top: 80px;
+  background: url(../files/left.gif);
+}
+
+#central {
+  position: relative;
+	margin-left: 150px;
+  margin-top: 0px;
+}
+
+#right {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+	left: 0px;
+  margin-top: -30px;
+}
+
+/*
+Details for the box containing the character's info.
+*/
+
+.right-box {
+  width: 150px;
+  height: 110px;
+	background: url(../files/box.gif) no-repeat left top;
+}
+
+.right-boxprofile-img {
+	width: 150px;
+  height: 105px;
+}
+
+.right-boxprofile-header {
+  width: 150px;
+  height: 17px;
+  text-align: center;
+  font-family: Mackintosh;
+	font-weight: bold;
+  font-size: 10px;
+}
+
+.right-boxprofile-content {
+  width: 120px;
+  height: 83px;
+  padding-top: 5px; 
+	padding-left: 15px;
+  text-align: center;
+}
+
+.right-boxprofile-name {
+	MARGIN: 2px
+}
+
+.right-boxprofile-content .divider {
+	width: 115px;
+  height: 5px
+}
+
+.right-boxprofile-button {
+  width: 30px; 
+	padding: 0px;
+  float: left;
+  cursor: pointer;
+}
+
+
+FORM {
+	MARGIN: 0px
+}
+INPUT {
+	FONT-SIZE: 10px; FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, sans-serif
+}
+.right-box-content INPUT {
+	HEIGHT: 11px
+}
+
+
+BUTTON {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 10px; BORDER-BOTTOM-WIDTH: 0px; FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: transparent; BORDER-RIGHT-WIDTH: 0px
+}
+SELECT {
+	BORDER-RIGHT: #1f5a96 1px solid; BORDER-TOP: #1f5a96 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #1f5a96 1px solid; BORDER-BOTTOM: #1f5a96 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, sans-serif
+}
+TEXTAREA {
+	BORDER-RIGHT: #1f5a96 1px solid; BORDER-TOP: #1f5a96 1px solid; FONT-SIZE: 10px; BORDER-LEFT: #1f5a96 1px solid; BORDER-BOTTOM: #1f5a96 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, sans-serif
+}
+INPUT.radio {
+	WIDTH: 14px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 14px; BORDER-BOTTOM-STYLE: none
+}
+INPUT.checkbox {
+	WIDTH: 14px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 14px; BORDER-BOTTOM-STYLE: none
+}
+.ncheckbox {
+	WIDTH: 14px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 14px; BORDER-BOTTOM-STYLE: none
+}
+
+/*
+Details for the horizontal menu. First we split the
+bar into 3 pieces and then we deal with the menus.
+
+TODO: Do we keep this bullshit?!
+*/
+
+#framemenu-left {
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 0px; 
+	background: url(../files/menuleft.png) repeat;
+}
+#framemenu-right {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: url(../files/menuright.png) no-repeat; 
+}
+#framemenu-central {
+  width: auto;
+  height: 100%;
+  position: relative;
+  margin: 0px 150px 0px 250px;
+}
+
+ul.groupmenu {
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul.groupmenu li {
+	display: inline;
+}
+
+ul.groupmenu li a {
+  height: 30px;
+	display: inline-block;
+}
+
+#framemenu-central ul.groupmenu li a:hover {
+	background: url(../files/menu.png) no-repeat left top
+}
+
+#framemenu-central UL.groupmenu {
+	background: url(../files/menu.png) no-repeat;
+}
+
+#framemenu-left ul.groupmenu li a#link1 {
+  margin: 0px;
+	width: 100px;
+}
+#framemenu-right ul.groupmenu li a#link8 {
+  float: right;
+  margin-right: 8px;
+	width: 42px;
+}
+
+#framemenu-central ul.groupmenu li a#link2 {
+  margin-left: 5px;
+	width: 55px;
+}
+#framemenu-central ul.groupmenu li a#link2:hover {
+	background-position: -5px -30px;
+}
+
+#framemenu-central ul.groupmenu li a#link3 {
+	width: 62px;
+}
+#framemenu-central ul.groupmenu li a#link3:hover {
+	background-position: -60px -30px;
+}
+
+#framemenu-central ul.groupmenu li a#link4 {
+	width: 106px;
+}
+#framemenu-central ul.groupmenu li a#link4:hover {
+	background-position: -122px -30px;
+}
+
+#framemenu-central ul.groupmenu li a#link5 {
+	width: 56px;
+}
+#framemenu-central ul.groupmenu li a#link5:hover {
+	background-position: -228px -30px;
+}
+
+#framemenu-central ul.groupmenu li a#link6 {
+	width: 108px;
+}
+#framemenu-central ul.groupmenu li a#link6:hover {
+	background-position: -284px -30px;
+}
+
+#framemenu-central ul.groupmenu li a#link7 {
+	width: 128px;
+}
+#framemenu-central ul.groupmenu li a#link7:hover {
+	background-position: -392px -30px;
+}
+
+/*
+Menus opening when hovered on.
+*/
+
+#menu2 #menu3 #menu4 #menu5 #menu6 #menu7 {
+  width: 150px;
+  padding: 0px;
+  margin: 0px;
+  position: asbolute;
+}
+
+#menu2 {
+	margin-left: -40px;
+  display: none;
+}
+#menu3 {
+	margin-left: 40px;
+  display: none;
+}
+#menu4 {
+	margin-left: 135px;
+  display: none;
+}
+#menu5 {
+	margin-left: 235px;
+  display: none;
+}
+#menu6 {
+	margin-left: 335px;
+  display: none;
+}
+#menu7 {
+	margin-left: 470px;
+  display: none;
+}
+
+
+
+
+
+
+
+/*
+Central content
+*/
+
+.bx-up {
+  MAX-WIDTH: 750px;
+  BACKGROUND: url(../files/bx0.png) no-repeat right top;
+}
+
+.bx-up DIV {
+	BACKGROUND: url(../files/bx0.png) no-repeat left top;
+  WIDTH: 172px; HEIGHT: 31px
+}
+
+.bx-left {
+	BACKGROUND: url(../files/bx0.png) no-repeat left bottom;
+  MAX-WIDTH: 750px; MARGIN: auto;
+}
+.bx-right {
+	BACKGROUND: url(../files/bx0.png) no-repeat right bottom;
+  MARGIN-LEFT: 15px;
+}
+.bx-img {
+	display: none;
+}
+.bx-left P {
+	PADDING-RIGHT: 35px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 0px
+}
+.bx-title {
+	MARGIN-TOP: -30px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+  FLOAT: left; COLOR: #333;
+  margin-left: 10px;
+  font-family: Mackintosh;
+  FONT-VARIANT: small-caps
+}
+
+
+
+
+/*
+Submenu
+*/
+
+
+.submenu {
+	TEXT-ALIGN: center
+}
+.submenu UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px;
+  MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.submenu LI {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid;
+  BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid;
+  BACKGROUND-COLOR: #c7c7c7
+}
+.submenu LI {
+	MARGIN: 6px 22px 6px 6px
+}
+.submenu P {
+	MARGIN: 6px 26px 6px 6px
+}
+.submenu LI.on {
+	BACKGROUND-COLOR: #000000
+}
+.submenu LI A {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px;
+  COLOR: #000; PADDING-TOP: 2px; TEXT-DECORATION: none;
+	DISPLAY: block;
+}
+.submenu LI.on A {
+  COLOR: #fff
+}
+.submenu LI A:hover {
+	COLOR: #000; BACKGROUND-COLOR: #f9f9f9; TEXT-DECORATION: none
+}
+.submenu LI.on A:hover {
+	COLOR: #000; BACKGROUND-COLOR: #c7c7c7; TEXT-DECORATION: none
+}
